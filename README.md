@@ -16,7 +16,7 @@ This file contains follow functions.
         - input: none
         - return: list of string of background image.
         length of each string should be the same.
-    - function `pets#{world's name}#bg_setting()`
+    - function `pets#{world's name}#bg_setting()` (optional)
         - input: none
         - return: none
         This function is called after creating the garden.
@@ -42,7 +42,7 @@ Plug 'MeF0504/vim-pets-ocean'
 ```
 
 ## License
-[MIT]()
+[MIT](https://github.com/MeF0504/vim-pets-ocean/blob/main/LICENSE)
 
 ## Author
 [MeF0504](https://github.com/MeF0504)
