@@ -1,11 +1,12 @@
 scriptencoding utf-8
 
 let s:pets = {
-            \ 'shark': "🦈",
-            \ 'whale': "🐋",
-            \ 'dolphin': "🐬",
-            \ 'fish': "🐟",
+            \ 'shark': nr2char(0x1f988),
+            \ 'whale': nr2char(0x1f40b),
+            \ 'dolphin': nr2char(0x1f42c),
+            \ 'fish': nr2char(0x1f41f),
             \ }
+" 🦈, 🐋, 🐬, 🐟
 function! pets#ocean#get_pet(name) abort
     if !has_key(s:pets, a:name)
         echohl ErrorMsg
