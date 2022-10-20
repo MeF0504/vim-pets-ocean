@@ -21,6 +21,18 @@ function! pets#ocean#get_pet_names() abort
     return keys(s:pets)
 endfunction
 
+function! pets#ocean#config() abort
+    return {}
+    " let res = {
+    "             \ 'pets_birth_enable': 1,
+    "             \ 'pets_lifetime_enable': 1,
+    "             \ 'pets_garden_width': &columns/3,
+    "             \ 'pets_garden_height': &lines/3,
+    "             \ 'pets_garden_pos': [&lines-&cmdheight-1, &columns-1, 'botright'],
+    "             \ }
+    " return res
+endfunction
+
 function! pets#ocean#get_bg() abort
     let bg = [
                 \ "~ ",
