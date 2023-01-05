@@ -21,18 +21,8 @@ function! pets#ocean#get_pet_names() abort
     return keys(s:pets)
 endfunction
 
-function! pets#ocean#config() abort
-    return {'pets_ball_image': nr2char(0x1f980)}
-    " let res = {
-    "             \ 'pets_birth_enable': 1,
-    "             \ 'pets_lifetime_enable': 1,
-    "             \ 'pets_garden_width': &columns/3,
-    "             \ 'pets_garden_height': &lines/3,
-    "             \ 'pets_garden_pos': [&lines-&cmdheight-1, &columns-1, 'botright'],
-    "             \ 'pets_ball_image': nr2char(0x1f980),
-    "             \ }
-    " return res
-endfunction
+" :help pets-extension-ball_image
+let g:pets#ocean#ball_image = get(g:, "pets#ocean#ball_image", nr2char(0x1f980))
 
 function! pets#ocean#get_bg() abort
     let bg = [
